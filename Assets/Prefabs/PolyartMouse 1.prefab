@@ -47,7 +47,7 @@ Animator:
   m_GameObject: {fileID: 685195669}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a58d63122b09e9144938cd6a1ece4824, type: 3}
-  m_Controller: {fileID: 9100000, guid: b60dc9aa529b314489f628aa3b57c470, type: 2}
+  m_Controller: {fileID: 9100000, guid: c861b96e328f944c18a942a88f17b23b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -66,10 +66,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.28983352
+  m_Radius: 0.3619411
   m_Height: 1.2441994
   m_Direction: 1
-  m_Center: {x: 0, y: 0.6220997, z: 0}
+  m_Center: {x: 0.0059638023, y: 0.6220997, z: 0}
 --- !u!54 &1652289593089722707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 685195673}
   speed: 5
+  hasSword: 0
+  hasBow: 0
 --- !u!1 &230172163212518162
 GameObject:
   m_ObjectHideFlags: 0

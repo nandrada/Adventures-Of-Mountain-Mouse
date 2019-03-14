@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public float speed;
+    public bool hasSword;
+    public bool hasBow;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         mithShards = 0;
         woodLogs = 0;
+        hasBow = false;
+        hasSword = false;
     }
 
     // Update is called once per frame
@@ -48,17 +52,19 @@ public class PlayerController : MonoBehaviour
         rb.AddTorque(rotate);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Mithril")) 
+        if (other.gameObject.CompareTag("Mithril"))
         {
+            other.gameObject.SetActive(false);
             mithShards++;
 
-        } else if(collision.gameObject.CompareTag("Log"))
+        }
+        else if (other.gameObject.CompareTag("Log"))
         {
+            other.gameObject.SetActive(false);
             woodLogs++;
         }
-
     }
 
 }
