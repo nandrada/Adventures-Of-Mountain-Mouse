@@ -672,6 +672,7 @@ GameObject:
   - component: {fileID: 164778358}
   - component: {fileID: 164778357}
   - component: {fileID: 164778356}
+  - component: {fileID: 164778360}
   m_Layer: 0
   m_Name: Boss Man
   m_TagString: Untagged
@@ -752,6 +753,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &164778360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164778355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f2a767b1755294a822693040cb9ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5264,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 63
-    y: 69
+    y: 70
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8071,6 +8084,7 @@ GameObject:
   - component: {fileID: 1755863099}
   - component: {fileID: 1755863096}
   - component: {fileID: 1755863097}
+  - component: {fileID: 1755863102}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -8159,7 +8173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 359
+    x: 358
     y: 163
     width: 120
     height: 40
@@ -8360,7 +8374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 509
+    x: 508
     y: 223
     width: 132
     height: 40
@@ -8372,6 +8386,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1755863092}
+  - {fileID: 1755863102}
 --- !u!114 &1755863096
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8589,6 +8604,27 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &1755863102
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755863084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81be3d7e84da460788dccea95a3313a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 164778355}
+  destroyInXSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1001 &1781018413
 PrefabInstance:
   m_ObjectHideFlags: 0
